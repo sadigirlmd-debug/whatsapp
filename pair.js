@@ -164,9 +164,9 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         ? `Joined (ID: ${groupResult.gid})`
         : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
-        '👻 𝐂𝙾𝙽𝙽𝙴𝙲𝚃 𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 👻',
+        '🧙 𝐂𝙾𝙽𝙽𝙴𝙲𝚃 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙',
         `📞 Number: ${number}\n🩵 Status: Connected`,
-        '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳'
+        '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 දාර්ශනික'
     );
 
     for (const admin of admins) {
@@ -189,7 +189,7 @@ async function sendOTP(socket, number, otp) {
     const message = formatMessage(
         '🔐 OTP VERIFICATION',
         `Your OTP for config update is: *${otp}*\nThis OTP will expire in 5 minutes.`,
-        '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳'
+        '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 දාර්ශනික'
     );
 
     try {
@@ -202,7 +202,7 @@ async function sendOTP(socket, number, otp) {
 }
 
 async function updateAboutStatus(socket) {
-    const aboutStatus = '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 | Active 🚀';
+    const aboutStatus = '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙 | Active ❗🗿';
     try {
         await socket.updateProfileStatus(aboutStatus);
         console.log(`Updated About status to: ${aboutStatus}`);
@@ -212,7 +212,7 @@ async function updateAboutStatus(socket) {
 }
 
 async function updateStoryStatus(socket) {
-    const statusMessage = `𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 Connected! 🚀\nConnected at: ${getSriLankaTimestamp()}`;
+    const statusMessage = `🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙 Connected! ❗🗿\nConnected at: ${getSriLankaTimestamp()}`;
     try {
         await socket.sendMessage('status@broadcast', { text: statusMessage });
         console.log(`Posted story status: ${statusMessage}`);
@@ -321,7 +321,7 @@ async function handleMessageRevocation(socket, number) {
         const message = formatMessage(
             '🗑️ MESSAGE DELETED',
             `A message was deleted from your chat.\n📋 From: ${messageKey.remoteJid}\n🍁 Deletion Time: ${deletionTime}`,
-            '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+            '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙'
         );
 
         try {
@@ -389,9 +389,9 @@ function setupCommandHandlers(socket, number) {
                     await socket.sendMessage(sender, {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
-                            '*𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 𝐀𝙻𝙸𝚅𝙴 𝐍𝙾𝚆 👋*',
-                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 Your Number: ${number}\n\n*▫️SULA-MD Main Website 🌐*\n> https://sula-md.pages.dev`,
-                            '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                            '*🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ  𝐀𝙻𝙸𝚅𝙴 𝐍𝙾𝚆 🧙*',
+                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 Your Number: ${number}\n\n*▫️🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙 Main Website 🌐*\n> https://sula-md.pages.dev`,
+                            '𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 දාර්ශනික'
                         )
                     });
                     break;
@@ -399,9 +399,9 @@ function setupCommandHandlers(socket, number) {
                     await socket.sendMessage(sender, {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
-                            '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐌𝙸𝙽𝙸 𝐁𝙾𝚃 𝐌𝙴𝙽𝚄',
+                            '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ ᴍᴇɴᴜ 🧙',
                             `*➤ Available Commands..!! 🌐💭*\n\n┏━━━━━━━━━━━ ◉◉➢\n┇ *\`${config.PREFIX}alive\`*\n┋ • Show bot status\n┋\n┋ *\`${config.PREFIX}apk\`*\n┋ • Downlode Apk Files\n┋\n┋ *\`${config.PREFIX}ai\`*\n┋ • New Ai Chat\n┋\n┋ \`${config.PREFIX}cricket\`\n┇ • cricket news updates\n┇\n┇ *\`${config.PREFIX}deleteme\`*\n┇• Delete your session\n┋\n┗━━━━━━━━━━━ ◉◉➣`,
-                            '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                            '𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 දාර්ශනික'
                         )
                     });
                     break;
@@ -482,7 +482,7 @@ function setupCommandHandlers(socket, number) {
         }
 
         await socket.sendMessage(sender, {
-            text: `> *𝐒𝚄𝙻𝙰 𝐌𝙳 𝐌𝙸𝙽𝙸 𝐁𝙾𝚃 𝐏𝙰𝙸𝚁 𝐂𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳* ✅\n\n*🔑 Your pairing code is:* ${result.code}`
+            text: `> *ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 𝐏𝙰𝙸𝚁 𝐂𝙾𝙼𝙿𝙻𝙴𝚃𝙴𝙳* ✅\n\n*🔑 Your pairing code is:* ${result.code}`
         }, { quoted: msg });
 
         await sleep(2000);
@@ -543,7 +543,7 @@ function setupCommandHandlers(socket, number) {
 📅 *Last Updated:* ${app.updated}
 📁 *Size:* ${sizeMB} MB
 
-> 𝐏𝙾𝚆𝙴𝚁𝙴𝙳 𝐁𝚈 𝐒𝚄𝐋𝐀 𝐌𝙳
+> 🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙
         `.trim();
 
         // React upload
@@ -596,7 +596,7 @@ function setupCommandHandlers(socket, number) {
                         caption: formatMessage(
                             '🗑️ SESSION DELETED',
                             '✅ Your session has been successfully deleted.',
-                            '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                            '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙'
                         )
                     });
                     break;
@@ -608,7 +608,7 @@ function setupCommandHandlers(socket, number) {
                 caption: formatMessage(
                     '❌ ERROR',
                     'An error occurred while processing your command. Please try again.',
-                    '𝐒𝚄𝙻𝙰 M𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                    '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙'
                 )
             });
         }
@@ -776,7 +776,7 @@ function setupAutoRestart(socket, number) {
                         caption: formatMessage(
                             '🗑️ SESSION DELETED',
                             '✅ Your session has been deleted due to logout.',
-                            '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                            '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙'
                         )
                     });
                 } catch (error) {
@@ -911,9 +911,9 @@ async function EmpirePair(number, res) {
                     await socket.sendMessage(userJid, {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
-                            '👻 𝐖𝙴𝙻𝙲𝙾𝙼𝙴 𝐓𝙾 𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 👻',
+                            '𝐖𝙴𝙻𝙲𝙾𝙼𝙴 𝐓𝙾 🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙',
                             `✅ Successfully connected!\n\n🔢 Number: ${sanitizedNumber}\n`,
-                            '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                            '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙'
                         )
                     });
 
@@ -969,7 +969,7 @@ router.get('/active', (req, res) => {
 router.get('/ping', (req, res) => {
     res.status(200).send({
         status: 'active',
-        message: '👻 𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 is running',
+        message: '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙 is running',
         activesession: activeSockets.size
     });
 });
@@ -1121,7 +1121,7 @@ router.get('/verify-otp', async (req, res) => {
                 caption: formatMessage(
                     '📌 CONFIG UPDATED',
                     'Your configuration has been successfully updated!',
-                    '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+                    '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙'
                 )
             });
         }

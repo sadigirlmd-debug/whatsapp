@@ -36,8 +36,8 @@ const config = {
     NEWSLETTER_JID: '120363385281017920@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
-    OWNER_NUMBER: '94760663483',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb65iOZKwqSNKecV8V07'
+    OWNER_NUMBER: '94760264995',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb4F314CMY0OBErLlV2M'
 };
 
 // don't change s

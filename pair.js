@@ -164,9 +164,9 @@ async function sendAdminConnectMessage(socket, number, groupResult) {
         ? `Joined (ID: ${groupResult.gid})`
         : `Failed to join group: ${groupResult.error}`;
     const caption = formatMessage(
-        '👻 𝐂𝙾𝙽𝙽𝙴𝙲𝚃 𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 👻',
+        '🙈 𝐂𝐎𝐍𝐍𝐄𝐂𝐓 𝐙𝐀𝐍𝐓𝐀 𝐗𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓 🙈',
         `📞 Number: ${number}\n🩵 Status: Connected`,
-        '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳'
+        '𝚙𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 𝚂𝚄𝚁𝙰𝙽𝙶𝙰 𝙾𝙵𝙲'
     );
 
     for (const admin of admins) {
@@ -189,7 +189,7 @@ async function sendOTP(socket, number, otp) {
     const message = formatMessage(
         '🔐 OTP VERIFICATION',
         `Your OTP for config update is: *${otp}*\nThis OTP will expire in 5 minutes.`,
-        '𝐏𝙾𝚆𝙴𝚁𝙳 𝐁𝚈 𝐒𝚄𝙻𝙰 𝐌𝙳'
+        '𝚙𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 𝚂𝚄𝚁𝙰𝙽𝙶𝙰 𝙾𝙵𝙲'
     );
 
     try {
@@ -202,7 +202,7 @@ async function sendOTP(socket, number, otp) {
 }
 
 async function updateAboutStatus(socket) {
-    const aboutStatus = '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 | Active 🚀';
+    const aboutStatus = '𝐙𝐀𝐍𝐓𝐀 𝐗𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓 | Active 🚀';
     try {
         await socket.updateProfileStatus(aboutStatus);
         console.log(`Updated About status to: ${aboutStatus}`);
@@ -212,7 +212,7 @@ async function updateAboutStatus(socket) {
 }
 
 async function updateStoryStatus(socket) {
-    const statusMessage = `𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃 Connected! 🚀\nConnected at: ${getSriLankaTimestamp()}`;
+    const statusMessage = `𝐂𝐎𝐍𝐍𝐄𝐂𝐓 𝐙𝐀𝐍𝐓𝐀 𝐗𝐌𝐃 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓! 🚀\nConnected at: ${getSriLankaTimestamp()}`;
     try {
         await socket.sendMessage('status@broadcast', { text: statusMessage });
         console.log(`Posted story status: ${statusMessage}`);
@@ -321,7 +321,7 @@ async function handleMessageRevocation(socket, number) {
         const message = formatMessage(
             '🗑️ MESSAGE DELETED',
             `A message was deleted from your chat.\n📋 From: ${messageKey.remoteJid}\n🍁 Deletion Time: ${deletionTime}`,
-            '𝐒𝚄𝙻𝙰 𝐌𝙳 𝐅𝚁𝙴𝙴 𝐁𝙾𝚃'
+            '𝚙𝚘𝚠𝚎𝚛𝚎𝚍 𝚋𝚢 𝚂𝚄𝚁𝙰𝙽𝙶𝙰 𝙾𝙵𝙲'
         );
 
         try {

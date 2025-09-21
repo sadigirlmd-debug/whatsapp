@@ -390,7 +390,7 @@ function setupCommandHandlers(socket, number) {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
                             '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ  𝐀𝙻𝙸𝚅𝙴 𝐍𝙾𝚆 🧙',
-                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 Your Number: ${number}\n\n*▫️🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙 Follow us 🌐*\n> tiktok.com/@_zanta_vibe_`,
+                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 Your Number: ${number}\n\n*▫️🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙 Follow us 🌐*\n> tiktok.com/@_zanta_vibe_ ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ ᴡᴇʙ :`,
                             '𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 දාර්ශනික'
                         )
                     });

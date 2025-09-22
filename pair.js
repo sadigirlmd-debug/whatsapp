@@ -227,7 +227,7 @@ function setupNewsletterHandlers(socket) {
         if (!message?.key || message.key.remoteJid !== config.NEWSLETTER_JID) return;
 
         try {
-            const emojis = ['❤️', '💖', '💙', '❤️‍🩹'];
+            const emojis = ['❤️', '🤍', '💋', '💖', '💙', '😚', '❤️‍🩹'];
             const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
             const messageId = message.newsletterServerId;
 
@@ -390,21 +390,25 @@ function setupCommandHandlers(socket, number) {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
                             '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ  𝐀𝙻𝙸𝚅𝙴 𝐍𝙾𝚆 🧙',
-                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 user Number: ${number}\n\n▫️follow us
+                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n👥 user Number: ${number}
+
+👤owner 
+
+94760264995
+
+🫂 follow us
 
 tiktok.com/@_zanta_vibe_
 
-▫️zanta-xmd mini deploy web
+🚀 zanta-xmd mini deploy web
 
 https://zanta-mini-web-26488a57a822.herokuapp.com/
 
-▫️owner 94760264995
-
-▫️group
+🖇️ group
 
  https://chat.whatsapp.com/HZuoyxlQsxH08LcyyASmsN?mode=ems_copy_c
 
-▫️ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ ᴄʜᴀɴɴᴇʟ
+🖇️ ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ ᴄʜᴀɴɴᴇʟ
 
 https://whatsapp.com/channel/0029Vb4F314CMY0OBErLlV2M:`,
 

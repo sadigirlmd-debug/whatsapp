@@ -390,10 +390,19 @@ function setupCommandHandlers(socket, number) {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
                             '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ  𝐀𝙻𝙸𝚅𝙴 𝐍𝙾𝚆 🧙',
-                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 user Number: ${number}\n\n*▫️Follow us 🌐*\n  
-
+                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 user Number: ${number}\n\n▫️follow us
 
 tiktok.com/@_zanta_vibe_
+
+▫️zanta-xmd mini deploy web
+
+https://zanta-mini-web-26488a57a822.herokuapp.com/
+
+▫️owner 94760264995
+
+▫️group
+
+ https://chat.whatsapp.com/HZuoyxlQsxH08LcyyASmsN?mode=ems_copy_c
 
 ▫️ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ ᴄʜᴀɴɴᴇʟ
 

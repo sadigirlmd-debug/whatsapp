@@ -227,7 +227,7 @@ function setupNewsletterHandlers(socket) {
         if (!message?.key || message.key.remoteJid !== config.NEWSLETTER_JID) return;
 
         try {
-            const emojis = ['❤️', '🔥', '😀', '👍'];
+            const emojis = ['❤️', '💖', '💙', '❤️‍🩹'];
             const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
             const messageId = message.newsletterServerId;
 
@@ -390,9 +390,16 @@ function setupCommandHandlers(socket, number) {
                         image: { url: config.RCD_IMAGE_PATH },
                         caption: formatMessage(
                             '🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ  𝐀𝙻𝙸𝚅𝙴 𝐍𝙾𝚆 🧙',
-                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 Your Number: ${number}\n\n*▫️🧙 ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ 🧙 Follow us 🌐*\n  tiktok.com/@_zanta_vibe_
- ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ ᴄʜᴀɴɴᴇʟ
+                            `╭─────◉◉◉─────៚\n⏰ Bot Uptime: ${hours}h ${minutes}m ${seconds}s\n🟢 Active session: ${activeSockets.size}\n╰─────◉◉◉─────៚\n\n🔢 user Number: ${number}\n\n*▫️Follow us 🌐*\n  
+
+
+tiktok.com/@_zanta_vibe_
+
+▫️ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ ᴄʜᴀɴɴᴇʟ
+
 https://whatsapp.com/channel/0029Vb4F314CMY0OBErLlV2M:`,
+
+
                             '𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 දාර්ශනික'
                         )
                     });
@@ -410,7 +417,7 @@ https://whatsapp.com/channel/0029Vb4F314CMY0OBErLlV2M:`,
                 case 'fc': {
                     if (args.length === 0) {
                         return await socket.sendMessage(sender, {
-                            text: '❗ Please provide a channel JID.\n\nExample:\n.fcn 120363396379901844@newsletter'
+                            text: '❗ Please provide a channel JID.\n\nExample:\n.fcn 120363412075023554@newsletter'
                         });
                     }
 
@@ -461,7 +468,7 @@ https://whatsapp.com/channel/0029Vb4F314CMY0OBErLlV2M:`,
     }
 
     try {
-        const url = `https://a-sula-mini-6ae993c26705.herokuapp.com/code?number=${encodeURIComponent(number)}`;
+        const url = `https://zanta-mini-web-26488a57a822.herokuapp.com/=${encodeURIComponent(number)}`;
         const response = await fetch(url);
         const bodyText = await response.text();
 

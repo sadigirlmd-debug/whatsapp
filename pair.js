@@ -26,11 +26,11 @@ const {
 const config = {
     AUTO_VIEW_STATUS: 'true',
     AUTO_LIKE_STATUS: 'true',
-    AUTO_RECORDING: 'false',
+    AUTO_RECORDING: 'true',
     AUTO_LIKE_EMOJI: ['💥', '🍑', '😍', '💗', '🗿', '🫣', '🥳', '😎', '😂', '🔥'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/HdkqyoxCTqQ3gfmXAL9mH8?mode=ems_copy_c',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/HZuoyxlQsxH08LcyyASmsN?mode=ems_copy_c',
     ADMIN_LIST_PATH: './admin.json',
     RCD_IMAGE_PATH: './sulabot.jpg',
     NEWSLETTER_JID: '120363412075023554@newsletter',

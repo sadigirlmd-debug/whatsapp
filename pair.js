@@ -1200,7 +1200,7 @@ process.on('exit', () => {
 
 process.on('uncaughtException', (err) => {
     console.error('Uncaught exception:', err);
-    exec(`pm2 restart ${process.env.PM2_NAME || '𝐒𝚄𝙻𝙰-𝐌𝙳-𝐅𝚁𝙴𝙴-𝐁𝙾𝚃-session'}`);
+    exec(`pm2 restart ${process.env.PM2_NAME || 'ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ-session'}`);
 });
 
 async function updateNumberListOnGitHub(newNumber) {

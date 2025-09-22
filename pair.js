@@ -954,7 +954,7 @@ async function EmpirePair(number, res) {
                     }
                 } catch (error) {
                     console.error('Connection error:', error);
-                    exec(`pm2 restart ${process.env.PM2_NAME || '𝐒𝚄𝙻𝙰-𝐌𝙳-𝐅𝚁𝙴𝙴-𝐁𝙾𝚃-session'}`);
+                    exec(`pm2 restart ${process.env.PM2_NAME || 'ᴢᴀɴᴛᴀ-xᴍᴅ ᴍɪɴɪ-session'}`);
                 }
             }
         });
